@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bgcolor-geral: #1d2437;
+    --white-padrão: #ffffff;
+    --color-h2: #ffffff66;
+    --color-button: #0071b7;
+}
+
+*{
+    box-sizing: border-box; /*inclue as bordas ao ajustes de itens da pagina*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /*aplicando fonte setada*/
+}
+
+.main {
+    background-color: var(--bgcolor-geral);
+    background-image: url('images/bg.png');/*setando imagen de fundo do header*/
+}
+
+.container {
+    max-width: 1070px; /*definindo largura max para o header*/
+    margin: auto; /*centralizar os itens do header*/
+    color: var(--white-padrão);
+}
+
+header {
+    padding-top: 45px;
+}
+
+.heroarea {
+    display: flex;
+}
+
+.heroarea .leftside{
+    flex: 1; /*deixa oleftside com o mesmo espaço do righside */
+}
+
+.heroarea  .leftside h1{ /*ajustes de fonte*/
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0 0 20px 0;
+    margin-top: 80px;
+}
+
+.heroarea .leftside .subtitle{
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--color-h2);
+    margin-bottom: 20px;
+}
+
+.heroarea .leftside .form input{
+    border: 1px solid var(--color-h2);
+    background-color: transparent;
+    height: 40px;
+    outline: none;
+    margin-bottom: 20px;
+    width: 300px;
+    padding-left: 10px;
+}
+.heroarea .leftside .form button{
+    height: 40px;
+    border: 0;
+    background-color: var(--color-button);
+    font-size: 14px;
+    color: var(--white-padrão);
+    padding: 0px 20px;
+    margin-left: 10px;
+}
+
+.heroarea .leftside .techs {
+    margin-bottom: 80px;
+}
+
+.heroarea .leftside .techs img{
+    margin-right: 10px;
+}
+
+.heroarea .rightside{
+    flex: 1;
+    background-image: url('images/bonieke.png'); /*setando imagen do hero a direira com o mesmo spaço com o flex 1*/
+    background-size: 100% auto;
+}
+
+/******* Section info ********/
+
+.info ul{
+    border-bottom: 2px solid #EAEEF1;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info #prima{
+    list-style: none;
+}
+
+.info ul li{
+    margin: 0 10px;
+    padding-left: 26px;
+    font-family: 'Roboto', sans-serif;
+
+    margin-right: 46px;
+
+    color: #c2c8cb;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.circle {
+    width: 6px;
+    height: 6px;
+    color: #c2c8cb;
+    border-radius: 50px;
+}
+
+/***** SECION INSTRUTIONS ******/
+
+.inst-container {
+    margin: auto;
+    max-width: 900px;
+    padding: 70px 0;
+}
+
+.inst-itens {
+    border-left: 3px solid #ECF0F3;
+    display: flex; /*aplicado ao circel e ao texts*/
+}
+
+.inst-circle {
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    background-color: #0071b7;
+    margin-left:  -9px; /*posicionamento da bolinha*/
+
+}
+
+
+
+.inst-text {
+    flex: 1;
+    margin-left: 50px
+}
+
+.inst-itens .inst-text h2 {
+    font-size: 32px;
+    color: #000000;
+    margin: -10px 0 0 0;
+}
+
+.inst-itens .inst-text p{
+    
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 23px;
+    margin-bottom: 70px;
+}
+
+.inst-itens:last-child {
+    border: 0;
+}
+.inst-itens:last-child p{
+    margin: 0;
+}
+
+/***** footer ****/
+
+.cta{
+    background-color: #1d2437;
+}
+
+.cta-container {
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.cta-left{
+    flex: 1;
+    margin-right: 30px;
+}
+
+.cta-right {
+    flex: 1;
+    margin-left: 30px;
+}
+
+.cta-left h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+.cta-left p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #ccc;
+}
+
+.cta-right input{
+    border: 1px solid var(--color-h2);
+    background-color: transparent;
+    height: 40px;
+    outline: none;
+    margin-bottom: 20px;
+    width: 80%;
+    padding-left: 10px;
+}
+.cta-right button{
+    height: 40px;
+    border: 0;
+    background-color: var(--color-button);
+    font-size: 14px;
+    color: var(--white-padrão);
+    padding: 0px 20px;
+    width: 80%;
+
+}
+
+footer{
+    background-color: #1d2437;
+    display: flex;
+    color: #fff;
+    border-top:  2px solid  rgba(255, 255, 255, 0.1);;
+}
+
+footer a {
+    flex: 1;
+    margin-left: 78px;
+    margin-top: 50pxx;
+}
+
+footer p{
+    margin: 50px;
+}
+
+/***** Responsividade *****/
